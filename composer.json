@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Por Fernando H Rocha.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
@@ -24,7 +24,9 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Admin\\": "modules/Admin/",
+            "Base\\": "modules/Base/"
         }
     },
     "autoload-dev": {
