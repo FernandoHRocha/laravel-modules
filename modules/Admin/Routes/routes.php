@@ -1,5 +1,9 @@
 <?php
 
+use Admin\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', fn() => response('foo'));
+Route::group(['middleware' => ['apiJWT']], function() {
+    Route::get('/home', [AdminController::class,'index']);
+});
+
